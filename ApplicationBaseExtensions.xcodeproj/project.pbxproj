@@ -6,10 +6,33 @@
 	objectVersion = 48;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		D6B7EC1C20089EB000780C95 /* FatBinary */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = D6B7EC1D20089EB000780C95 /* Build configuration list for PBXAggregateTarget "FatBinary" */;
+			buildPhases = (
+				D6B7EC2020089EC800780C95 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = FatBinary;
+			productName = FatBinary;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		D6B7EC0320088C6F00780C95 /* ApplicationBaseExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6B7EBF920088C6F00780C95 /* ApplicationBaseExtensions.framework */; };
 		D6B7EC0820088C6F00780C95 /* ApplicationBaseExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B7EC0720088C6F00780C95 /* ApplicationBaseExtensionsTests.swift */; };
 		D6B7EC0A20088C6F00780C95 /* ApplicationBaseExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = D6B7EBFC20088C6F00780C95 /* ApplicationBaseExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D6B7EC1420088CBB00780C95 /* Array+.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B7EC1320088CBB00780C95 /* Array+.swift */; };
+		D6B7EC262008A23800780C95 /* UIAlertController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B7EC252008A23800780C95 /* UIAlertController+.swift */; };
+		D6B7EC2C2008A58A00780C95 /* UIApplication+.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B7EC2B2008A58A00780C95 /* UIApplication+.swift */; };
+		D6B7EC2E2008A5D400780C95 /* UIStackView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B7EC2D2008A5D400780C95 /* UIStackView+.swift */; };
+		D6B7EC302008A63D00780C95 /* UITableView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B7EC2F2008A63D00780C95 /* UITableView+.swift */; };
+		D6B7EC322008A67F00780C95 /* UITableViewCell+.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B7EC312008A67F00780C95 /* UITableViewCell+.swift */; };
+		D6B7EC342008A6C200780C95 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B7EC332008A6C200780C95 /* UIView+.swift */; };
+		D6B7EC362008A74000780C95 /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B7EC352008A74000780C95 /* UIViewController+.swift */; };
+		D6B7EC382008A7B700780C95 /* URL+.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B7EC372008A7B700780C95 /* URL+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +52,15 @@
 		D6B7EC0220088C6F00780C95 /* ApplicationBaseExtensionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ApplicationBaseExtensionsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6B7EC0720088C6F00780C95 /* ApplicationBaseExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationBaseExtensionsTests.swift; sourceTree = "<group>"; };
 		D6B7EC0920088C6F00780C95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6B7EC1320088CBB00780C95 /* Array+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+.swift"; sourceTree = "<group>"; };
+		D6B7EC252008A23800780C95 /* UIAlertController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+.swift"; sourceTree = "<group>"; };
+		D6B7EC2B2008A58A00780C95 /* UIApplication+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+.swift"; sourceTree = "<group>"; };
+		D6B7EC2D2008A5D400780C95 /* UIStackView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+.swift"; sourceTree = "<group>"; };
+		D6B7EC2F2008A63D00780C95 /* UITableView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+.swift"; sourceTree = "<group>"; };
+		D6B7EC312008A67F00780C95 /* UITableViewCell+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+.swift"; sourceTree = "<group>"; };
+		D6B7EC332008A6C200780C95 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
+		D6B7EC352008A74000780C95 /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
+		D6B7EC372008A7B700780C95 /* URL+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +105,15 @@
 			children = (
 				D6B7EBFC20088C6F00780C95 /* ApplicationBaseExtensions.h */,
 				D6B7EBFD20088C6F00780C95 /* Info.plist */,
+				D6B7EC1320088CBB00780C95 /* Array+.swift */,
+				D6B7EC252008A23800780C95 /* UIAlertController+.swift */,
+				D6B7EC2B2008A58A00780C95 /* UIApplication+.swift */,
+				D6B7EC2D2008A5D400780C95 /* UIStackView+.swift */,
+				D6B7EC2F2008A63D00780C95 /* UITableView+.swift */,
+				D6B7EC312008A67F00780C95 /* UITableViewCell+.swift */,
+				D6B7EC332008A6C200780C95 /* UIView+.swift */,
+				D6B7EC352008A74000780C95 /* UIViewController+.swift */,
+				D6B7EC372008A7B700780C95 /* URL+.swift */,
 			);
 			path = ApplicationBaseExtensions;
 			sourceTree = "<group>";
@@ -148,9 +189,14 @@
 				TargetAttributes = {
 					D6B7EBF820088C6F00780C95 = {
 						CreatedOnToolsVersion = 9.0.1;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 					D6B7EC0120088C6F00780C95 = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+					};
+					D6B7EC1C20089EB000780C95 = {
 						CreatedOnToolsVersion = 9.0.1;
 						ProvisioningStyle = Automatic;
 					};
@@ -170,6 +216,7 @@
 			targets = (
 				D6B7EBF820088C6F00780C95 /* ApplicationBaseExtensions */,
 				D6B7EC0120088C6F00780C95 /* ApplicationBaseExtensionsTests */,
+				D6B7EC1C20089EB000780C95 /* FatBinary */,
 			);
 		};
 /* End PBXProject section */
@@ -191,11 +238,36 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		D6B7EC2020089EC800780C95 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/sh\n\nUNIVERSAL_OUTPUTFOLDER=${BUILD_DIR}/${CONFIGURATION}-universal\n\n# make sure the output directory exists\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\n\n# Step 1. Build Device and Simulator versions\nxcodebuild -target \"${PROJECT_NAME}\" ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos  BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\nxcodebuild -target \"${PROJECT_NAME}\" -configuration ${CONFIGURATION} -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\n\n# Step 2. Copy the framework structure (from iphoneos build) to the universal folder\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${PROJECT_NAME}.framework\" \"${UNIVERSAL_OUTPUTFOLDER}/\"\n\n# Step 3. Copy Swift modules from iphonesimulator build (if it exists) to the copied framework directory\nSIMULATOR_SWIFT_MODULES_DIR=\"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${PROJECT_NAME}.framework/Modules/${PROJECT_NAME}.swiftmodule/.\"\nif [ -d \"${SIMULATOR_SWIFT_MODULES_DIR}\" ]; then\ncp -R \"${SIMULATOR_SWIFT_MODULES_DIR}\" \"${UNIVERSAL_OUTPUTFOLDER}/${PROJECT_NAME}.framework/Modules/${PROJECT_NAME}.swiftmodule\"\nfi\n\n# Step 4. Create universal binary file using lipo and place the combined executable in the copied framework directory\nlipo -create -output \"${UNIVERSAL_OUTPUTFOLDER}/${PROJECT_NAME}.framework/${PROJECT_NAME}\" \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${PROJECT_NAME}.framework/${PROJECT_NAME}\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${PROJECT_NAME}.framework/${PROJECT_NAME}\"\n\n# Step 5. Convenience step to copy the framework to the project's directory\ncp -R \"${UNIVERSAL_OUTPUTFOLDER}/${PROJECT_NAME}.framework\" \"${PROJECT_DIR}\"\n\n# Step 6. Convenience step to open the project's directory in Finder\nopen \"${PROJECT_DIR}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D6B7EBF420088C6F00780C95 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6B7EC262008A23800780C95 /* UIAlertController+.swift in Sources */,
+				D6B7EC382008A7B700780C95 /* URL+.swift in Sources */,
+				D6B7EC1420088CBB00780C95 /* Array+.swift in Sources */,
+				D6B7EC362008A74000780C95 /* UIViewController+.swift in Sources */,
+				D6B7EC342008A6C200780C95 /* UIView+.swift in Sources */,
+				D6B7EC2C2008A58A00780C95 /* UIApplication+.swift in Sources */,
+				D6B7EC322008A67F00780C95 /* UITableViewCell+.swift in Sources */,
+				D6B7EC302008A63D00780C95 /* UITableView+.swift in Sources */,
+				D6B7EC2E2008A5D400780C95 /* UIStackView+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +406,7 @@
 		D6B7EC0E20088C6F00780C95 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -343,10 +416,12 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = ApplicationBaseExtensions/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Yuta-Kawabe.ApplicationBaseExtensions";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -355,6 +430,7 @@
 		D6B7EC0F20088C6F00780C95 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -364,6 +440,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = ApplicationBaseExtensions/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Yuta-Kawabe.ApplicationBaseExtensions";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -376,6 +453,7 @@
 		D6B7EC1120088C6F00780C95 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X5EF57U232;
 				INFOPLIST_FILE = ApplicationBaseExtensionsTests/Info.plist;
@@ -390,6 +468,7 @@
 		D6B7EC1220088C6F00780C95 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X5EF57U232;
 				INFOPLIST_FILE = ApplicationBaseExtensionsTests/Info.plist;
@@ -398,6 +477,24 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D6B7EC1E20089EB000780C95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X5EF57U232;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D6B7EC1F20089EB000780C95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X5EF57U232;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -427,6 +524,15 @@
 			buildConfigurations = (
 				D6B7EC1120088C6F00780C95 /* Debug */,
 				D6B7EC1220088C6F00780C95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D6B7EC1D20089EB000780C95 /* Build configuration list for PBXAggregateTarget "FatBinary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6B7EC1E20089EB000780C95 /* Debug */,
+				D6B7EC1F20089EB000780C95 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -1,0 +1,11 @@
+framework module ApplicationBaseExtensions {
+  umbrella header "ApplicationBaseExtensions.h"
+
+  export *
+  module * { export * }
+}
+
+module ApplicationBaseExtensions.Swift {
+    header "ApplicationBaseExtensions-Swift.h"
+    requires objc
+}
