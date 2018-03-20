@@ -10,7 +10,7 @@ import Foundation
 
 extension UIStackView {
     
-    func removeAllArangedSubView() {
+    public func removeAllArangedSubView() {
         self.arrangedSubviews.forEach { v in
             self.removeArrangedSubview(v)
             v.removeFromSuperview()

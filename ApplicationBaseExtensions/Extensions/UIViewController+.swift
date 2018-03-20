@@ -10,21 +10,21 @@ import Foundation
 
 extension UIViewController {
     
-    @IBAction func dismiss(_ sender: Any? = nil) {
+    @IBAction public func dismiss(_ sender: Any? = nil) {
         self.dismiss(animated: true, completion: nil)
     }
     
-    @IBAction func pop(_ sender: Any? = nil) {
+    @IBAction public func pop(_ sender: Any? = nil) {
         self.navigationController?.popViewController(animated: true)
     }
 }
 
 extension UIViewController: StoryBoardInstantiatable {}
 
-protocol StoryBoardInstantiatable {}
+public protocol StoryBoardInstantiatable {}
 extension StoryBoardInstantiatable where Self: UIViewController {
     
-    static func instantiate() -> Self {
+    public static func instantiate() -> Self {
         let bundle = Bundle(for: self.self)
         let name = String(describing: self.self)
         

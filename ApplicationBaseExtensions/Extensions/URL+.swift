@@ -8,9 +8,9 @@
 
 import Foundation
 
-extension URL {
+public extension URL {
     
-    init(nullableOrEmptableString: String?) {
+    public init(nullableOrEmptableString: String?) {
         guard let urlString = nullableOrEmptableString,
             !urlString.isEmpty else {
                 self.init(string: "about:blank")!

@@ -8,13 +8,13 @@
 
 import Foundation
 
-protocol UIApplicationProtocol {
+public protocol UIApplicationProtocol {
     func openURL(url: URL)
 }
 
 extension UIApplication: UIApplicationProtocol {
     
-    func openURL(url: URL) {
+    public func openURL(url: URL) {
         if #available(iOS 10.0, *) {
             UIApplication.shared.open(url, options: [:])
         }

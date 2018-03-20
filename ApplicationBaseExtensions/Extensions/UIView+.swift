@@ -10,7 +10,7 @@ import Foundation
 
 extension UIView {
     
-    func matchParent(_ parent: UIView) {
+    public func matchParent(_ parent: UIView) {
         self.translatesAutoresizingMaskIntoConstraints = false
         self.topAnchor.constraint(equalTo: parent.topAnchor).isActive = true
         self.leadingAnchor.constraint(equalTo: parent.leadingAnchor).isActive = true
@@ -18,7 +18,7 @@ extension UIView {
         self.bottomAnchor.constraint(equalTo: parent.bottomAnchor).isActive = true
     }
     
-    func systemLayoutFitToWidth(_ width: CGFloat) {
+    public func systemLayoutFitToWidth(_ width: CGFloat) {
         var fittingSize = UILayoutFittingCompressedSize
         fittingSize.width = width
         let size = self.systemLayoutSizeFitting(fittingSize, withHorizontalFittingPriority: UILayoutPriority(rawValue: 1000), verticalFittingPriority: UILayoutPriority(rawValue: 250))
@@ -26,14 +26,14 @@ extension UIView {
         self.sizeToFit()
     }
     
-    func removeAllChildrenView() {
+    public func removeAllChildrenView() {
         self.subviews.forEach { $0.removeFromSuperview() }
     }
 }
 
 extension UIView {
     
-    @IBInspectable var borderColor: UIColor? {
+    @IBInspectable public var borderColor: UIColor? {
         get {
             return layer.borderColor.map { UIColor(cgColor: $0) }
         }
@@ -42,7 +42,7 @@ extension UIView {
         }
     }
     
-    @IBInspectable var borderWidth: CGFloat {
+    @IBInspectable public var borderWidth: CGFloat {
         get {
             return layer.borderWidth
         }
@@ -51,7 +51,7 @@ extension UIView {
         }
     }
     
-    @IBInspectable var cornerRadius: CGFloat {
+    @IBInspectable public var cornerRadius: CGFloat {
         get {
             return layer.cornerRadius
         }

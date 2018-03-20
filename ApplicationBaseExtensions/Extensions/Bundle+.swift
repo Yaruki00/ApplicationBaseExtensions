@@ -11,7 +11,7 @@ import UIKit
 
 extension Bundle {
     
-    static func loadView(instance: UIView) -> UIView? {
+    public static func loadView(instance: UIView) -> UIView? {
         let t = type(of: instance)
         let bundle = Bundle(for: t)
         let nib = UINib(nibName: String(describing: t), bundle: bundle)

@@ -11,7 +11,7 @@ import UIKit
 
 extension NSAttributedString {
     
-    convenience init(string: String, lineSpacing: CGFloat) {
+    public convenience init(string: String, lineSpacing: CGFloat) {
         let paragraphStyle = NSMutableParagraphStyle()
         paragraphStyle.lineSpacing = lineSpacing
         let attributes = [

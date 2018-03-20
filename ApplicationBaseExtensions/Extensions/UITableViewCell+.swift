@@ -10,7 +10,7 @@ import Foundation
 
 extension UITableViewCell {
     
-    static var nib: UINib { return UINib(nibName: String(describing: self.self), bundle: nil) }
+    public static var nib: UINib { return UINib(nibName: String(describing: self.self), bundle: nil) }
     
-    static var name: String { return String(describing: self.self) }
+    public static var name: String { return String(describing: self.self) }
 }
