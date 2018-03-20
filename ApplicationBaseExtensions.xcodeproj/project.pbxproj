@@ -22,7 +22,6 @@
 
 /* Begin PBXBuildFile section */
 		D6B7EC0320088C6F00780C95 /* ApplicationBaseExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6B7EBF920088C6F00780C95 /* ApplicationBaseExtensions.framework */; };
-		D6B7EC0820088C6F00780C95 /* ApplicationBaseExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B7EC0720088C6F00780C95 /* ApplicationBaseExtensionsTests.swift */; };
 		D6B7EC0A20088C6F00780C95 /* ApplicationBaseExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = D6B7EBFC20088C6F00780C95 /* ApplicationBaseExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D6B7EC1420088CBB00780C95 /* Array+.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B7EC1320088CBB00780C95 /* Array+.swift */; };
 		D6B7EC262008A23800780C95 /* UIAlertController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B7EC252008A23800780C95 /* UIAlertController+.swift */; };
@@ -33,6 +32,10 @@
 		D6B7EC342008A6C200780C95 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B7EC332008A6C200780C95 /* UIView+.swift */; };
 		D6B7EC362008A74000780C95 /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B7EC352008A74000780C95 /* UIViewController+.swift */; };
 		D6B7EC382008A7B700780C95 /* URL+.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B7EC372008A7B700780C95 /* URL+.swift */; };
+		D6B7EC3A200C438500780C95 /* ArrayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B7EC39200C438500780C95 /* ArrayTests.swift */; };
+		D6B7EC3C200C46C600780C95 /* UIAlertControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B7EC3B200C46C600780C95 /* UIAlertControllerTests.swift */; };
+		D6B7EC44200C65AB00780C95 /* UIAlertControllerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B7EC3F200C492B00780C95 /* UIAlertControllerMock.swift */; };
+		D6B7EC46200C6D2600780C95 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B7EC45200C6D2600780C95 /* Utility.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +53,6 @@
 		D6B7EBFC20088C6F00780C95 /* ApplicationBaseExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApplicationBaseExtensions.h; sourceTree = "<group>"; };
 		D6B7EBFD20088C6F00780C95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D6B7EC0220088C6F00780C95 /* ApplicationBaseExtensionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ApplicationBaseExtensionsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D6B7EC0720088C6F00780C95 /* ApplicationBaseExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationBaseExtensionsTests.swift; sourceTree = "<group>"; };
 		D6B7EC0920088C6F00780C95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D6B7EC1320088CBB00780C95 /* Array+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+.swift"; sourceTree = "<group>"; };
 		D6B7EC252008A23800780C95 /* UIAlertController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+.swift"; sourceTree = "<group>"; };
@@ -61,6 +63,10 @@
 		D6B7EC332008A6C200780C95 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 		D6B7EC352008A74000780C95 /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
 		D6B7EC372008A7B700780C95 /* URL+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+.swift"; sourceTree = "<group>"; };
+		D6B7EC39200C438500780C95 /* ArrayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayTests.swift; sourceTree = "<group>"; };
+		D6B7EC3B200C46C600780C95 /* UIAlertControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertControllerTests.swift; sourceTree = "<group>"; };
+		D6B7EC3F200C492B00780C95 /* UIAlertControllerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertControllerMock.swift; sourceTree = "<group>"; };
+		D6B7EC45200C6D2600780C95 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +111,25 @@
 			children = (
 				D6B7EBFC20088C6F00780C95 /* ApplicationBaseExtensions.h */,
 				D6B7EBFD20088C6F00780C95 /* Info.plist */,
+				D6B7EC3D200C477C00780C95 /* Extensions */,
+			);
+			path = ApplicationBaseExtensions;
+			sourceTree = "<group>";
+		};
+		D6B7EC0620088C6F00780C95 /* ApplicationBaseExtensionsTests */ = {
+			isa = PBXGroup;
+			children = (
+				D6B7EC0920088C6F00780C95 /* Info.plist */,
+				D6B7EC43200C49D200780C95 /* Tests */,
+				D6B7EC3E200C486900780C95 /* Mocks */,
+				D6B7EC45200C6D2600780C95 /* Utility.swift */,
+			);
+			path = ApplicationBaseExtensionsTests;
+			sourceTree = "<group>";
+		};
+		D6B7EC3D200C477C00780C95 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
 				D6B7EC1320088CBB00780C95 /* Array+.swift */,
 				D6B7EC252008A23800780C95 /* UIAlertController+.swift */,
 				D6B7EC2B2008A58A00780C95 /* UIApplication+.swift */,
@@ -115,16 +140,24 @@
 				D6B7EC352008A74000780C95 /* UIViewController+.swift */,
 				D6B7EC372008A7B700780C95 /* URL+.swift */,
 			);
-			path = ApplicationBaseExtensions;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
-		D6B7EC0620088C6F00780C95 /* ApplicationBaseExtensionsTests */ = {
+		D6B7EC3E200C486900780C95 /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
-				D6B7EC0720088C6F00780C95 /* ApplicationBaseExtensionsTests.swift */,
-				D6B7EC0920088C6F00780C95 /* Info.plist */,
+				D6B7EC3F200C492B00780C95 /* UIAlertControllerMock.swift */,
 			);
-			path = ApplicationBaseExtensionsTests;
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		D6B7EC43200C49D200780C95 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				D6B7EC39200C438500780C95 /* ArrayTests.swift */,
+				D6B7EC3B200C46C600780C95 /* UIAlertControllerTests.swift */,
+			);
+			path = Tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,7 +308,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6B7EC0820088C6F00780C95 /* ApplicationBaseExtensionsTests.swift in Sources */,
+				D6B7EC46200C6D2600780C95 /* Utility.swift in Sources */,
+				D6B7EC44200C65AB00780C95 /* UIAlertControllerMock.swift in Sources */,
+				D6B7EC3C200C46C600780C95 /* UIAlertControllerTests.swift in Sources */,
+				D6B7EC3A200C438500780C95 /* ArrayTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
