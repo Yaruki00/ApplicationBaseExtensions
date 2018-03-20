@@ -9,38 +9,42 @@
 import Foundation
 
 public protocol UIAlertControllerProtocol {
-    static func showOkAlert(vc        : UIViewController,
-                            title     : String,
-                            message   : String,
-                            style     : UIAlertControllerStyle,
-                            okTitle   : String,
-                            okHandler : (() -> Void)?)
-    static func showOkCancelAlert(vc            : UIViewController,
-                                  title         : String,
-                                  message       : String,
-                                  style         : UIAlertControllerStyle,
-                                  okTitle       : String,
-                                  okHandler     : (() -> Void)?,
-                                  cancelTitle   : String,
-                                  cancelHandler : (() -> Void)?)
-    static func showOkCancelWithTextFieldAlert(vc            : UIViewController,
-                                               title         : String,
-                                               message       : String,
-                                               style         : UIAlertControllerStyle,
-                                               okTitle       : String,
-                                               okHandler     : ((String) -> Void)?,
-                                               cancelTitle   : String,
-                                               cancelHandler : (() -> Void)?)
+    static func showOkAlert(
+        vc        : UIViewController,
+        title     : String,
+        message   : String,
+        style     : UIAlertControllerStyle,
+        okTitle   : String,
+        okHandler : (() -> Void)?)
+    static func showOkCancelAlert(
+        vc            : UIViewController,
+        title         : String,
+        message       : String,
+        style         : UIAlertControllerStyle,
+        okTitle       : String,
+        okHandler     : (() -> Void)?,
+        cancelTitle   : String,
+        cancelHandler : (() -> Void)?)
+    static func showOkCancelWithTextFieldAlert(
+        vc            : UIViewController,
+        title         : String,
+        message       : String,
+        style         : UIAlertControllerStyle,
+        okTitle       : String,
+        okHandler     : ((String) -> Void)?,
+        cancelTitle   : String,
+        cancelHandler : (() -> Void)?)
 }
 
 extension UIAlertController: UIAlertControllerProtocol {
     
-    public static func showOkAlert(vc        : UIViewController,
-                            title     : String,
-                            message   : String,
-                            style     : UIAlertControllerStyle = .alert,
-                            okTitle   : String = "OK",
-                            okHandler : (() -> Void)? = nil) {
+    public static func showOkAlert(
+        vc        : UIViewController,
+        title     : String,
+        message   : String,
+        style     : UIAlertControllerStyle = .alert,
+        okTitle   : String = "OK",
+        okHandler : (() -> Void)? = nil) {
         let alert = UIAlertController(
             title          : title,
             message        : message,
@@ -55,14 +59,15 @@ extension UIAlertController: UIAlertControllerProtocol {
         vc.present(alert, animated: true, completion: nil)
     }
     
-    public static func showOkCancelAlert(vc            : UIViewController,
-                                  title         : String,
-                                  message       : String,
-                                  style         : UIAlertControllerStyle = .alert,
-                                  okTitle       : String = "OK",
-                                  okHandler     : (() -> Void)?,
-                                  cancelTitle   : String = "キャンセル",
-                                  cancelHandler : (() -> Void)? = nil) {
+    public static func showOkCancelAlert(
+        vc            : UIViewController,
+        title         : String,
+        message       : String,
+        style         : UIAlertControllerStyle = .alert,
+        okTitle       : String = "OK",
+        okHandler     : (() -> Void)?,
+        cancelTitle   : String = "キャンセル",
+        cancelHandler : (() -> Void)? = nil) {
         let alert = UIAlertController(
             title          : title,
             message        : message,
@@ -83,14 +88,15 @@ extension UIAlertController: UIAlertControllerProtocol {
         vc.present(alert, animated: true, completion: nil)
     }
     
-    public static func showOkCancelWithTextFieldAlert(vc            : UIViewController,
-                                               title         : String,
-                                               message       : String,
-                                               style         : UIAlertControllerStyle = .alert,
-                                               okTitle       : String = "OK",
-                                               okHandler     : ((String) -> Void)?,
-                                               cancelTitle   : String = "キャンセル",
-                                               cancelHandler : (() -> Void)? = nil) {
+    public static func showOkCancelWithTextFieldAlert(
+        vc            : UIViewController,
+        title         : String,
+        message       : String,
+        style         : UIAlertControllerStyle = .alert,
+        okTitle       : String = "OK",
+        okHandler     : ((String) -> Void)?,
+        cancelTitle   : String = "キャンセル",
+        cancelHandler : (() -> Void)? = nil) {
         let alert = UIAlertController(
             title          : title,
             message        : message,
