@@ -1,5 +1,5 @@
 //
-//  UITableView+.swift
+//  UIScrollView+.swift
 //  ApplicationBaseExtensions
 //
 //  Created by Yuta Kawabe on 2018/01/12.
@@ -8,9 +8,9 @@
 
 import Foundation
 
-extension UITableView {
+extension UIScrollView {
     
-    func addRefreshControl(target: Any, action: Selector, color: UIColor = .white) -> UIRefreshControl {
+    public func addRefreshControl(target: Any, action: Selector, color: UIColor = .white) -> UIRefreshControl {
         let refreshControl  = UIRefreshControl()
         refreshControl.tintColor = color
         refreshControl.addTarget(target, action: action, for: .valueChanged)
