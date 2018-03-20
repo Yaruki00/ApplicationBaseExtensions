@@ -10,24 +10,20 @@ import Foundation
 
 extension UIView {
     
-    func fitToSelf(childView: UIView) {
-        
-        childView.translatesAutoresizingMaskIntoConstraints = false
-        let bindings = ["childView": childView]
-        self.addConstraints(
-            NSLayoutConstraint.constraints(
-                withVisualFormat : "H:|[childView]|",
-                options          : [],
-                metrics          : nil,
-                views            : bindings
-        ))
-        self.addConstraints(
-            NSLayoutConstraint.constraints(
-                withVisualFormat : "V:|[childView]|",
-                options          : [],
-                metrics          : nil,
-                views            : bindings
-        ))
+    func matchParent(_ parent: UIView) {
+        self.translatesAutoresizingMaskIntoConstraints = false
+        self.topAnchor.constraint(equalTo: parent.topAnchor).isActive = true
+        self.leadingAnchor.constraint(equalTo: parent.leadingAnchor).isActive = true
+        self.trailingAnchor.constraint(equalTo: parent.trailingAnchor).isActive = true
+        self.bottomAnchor.constraint(equalTo: parent.bottomAnchor).isActive = true
+    }
+    
+    func systemLayoutFitToWidth(_ width: CGFloat) {
+        var fittingSize = UILayoutFittingCompressedSize
+        fittingSize.width = width
+        let size = self.systemLayoutSizeFitting(fittingSize, withHorizontalFittingPriority: UILayoutPriority(rawValue: 1000), verticalFittingPriority: UILayoutPriority(rawValue: 250))
+        self.bounds = CGRect(origin: .zero, size: size)
+        self.sizeToFit()
     }
     
     func removeAllChildrenView() {
