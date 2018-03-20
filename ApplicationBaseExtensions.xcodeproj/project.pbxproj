@@ -21,6 +21,8 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		D67CD6092060A58C002623DF /* Bundle+.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67CD6082060A58C002623DF /* Bundle+.swift */; };
+		D67CD60B2060A5AD002623DF /* NSAttuributedString+.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67CD60A2060A5AD002623DF /* NSAttuributedString+.swift */; };
 		D6B7EC0320088C6F00780C95 /* ApplicationBaseExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6B7EBF920088C6F00780C95 /* ApplicationBaseExtensions.framework */; };
 		D6B7EC0A20088C6F00780C95 /* ApplicationBaseExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = D6B7EBFC20088C6F00780C95 /* ApplicationBaseExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D6B7EC1420088CBB00780C95 /* Array+.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B7EC1320088CBB00780C95 /* Array+.swift */; };
@@ -49,6 +51,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D67CD6082060A58C002623DF /* Bundle+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+.swift"; sourceTree = "<group>"; };
+		D67CD60A2060A5AD002623DF /* NSAttuributedString+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSAttuributedString+.swift"; sourceTree = "<group>"; };
 		D6B7EBF920088C6F00780C95 /* ApplicationBaseExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ApplicationBaseExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6B7EBFC20088C6F00780C95 /* ApplicationBaseExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApplicationBaseExtensions.h; sourceTree = "<group>"; };
 		D6B7EBFD20088C6F00780C95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -139,6 +143,8 @@
 				D6B7EC332008A6C200780C95 /* UIView+.swift */,
 				D6B7EC352008A74000780C95 /* UIViewController+.swift */,
 				D6B7EC372008A7B700780C95 /* URL+.swift */,
+				D67CD6082060A58C002623DF /* Bundle+.swift */,
+				D67CD60A2060A5AD002623DF /* NSAttuributedString+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -298,9 +304,11 @@
 				D6B7EC362008A74000780C95 /* UIViewController+.swift in Sources */,
 				D6B7EC342008A6C200780C95 /* UIView+.swift in Sources */,
 				D6B7EC2C2008A58A00780C95 /* UIApplication+.swift in Sources */,
+				D67CD60B2060A5AD002623DF /* NSAttuributedString+.swift in Sources */,
 				D6B7EC322008A67F00780C95 /* UITableViewCell+.swift in Sources */,
 				D6B7EC302008A63D00780C95 /* UITableView+.swift in Sources */,
 				D6B7EC2E2008A5D400780C95 /* UIStackView+.swift in Sources */,
+				D67CD6092060A58C002623DF /* Bundle+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
